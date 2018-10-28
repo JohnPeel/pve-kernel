@@ -1,6 +1,7 @@
 [submodule "submodules/zfsonlinux"]
 	path = submodules/zfsonlinux
-	url = ../zfsonlinux
+	url = git://git.proxmox.com/git/zfsonlinux
 [submodule "submodules/ubuntu-bionic"]
 	path = submodules/ubuntu-bionic
-	url = ../mirror_ubuntu-bionic-kernel
+	url = git://git.proxmox.com/git/mirror_ubuntu-bionic-kernel
+	shallow = true

@@ -29,7 +29,7 @@ Description: Linux kernel version specific tools for version @KVMAJMIN@
  This package provides the architecture dependent parts for kernel
  version locked tools (such as perf and x86_energy_perf_policy)
 
-Package: pve-headers-@KVNAME@
+Package: pve-headers-@KVNAME@-removermrr
 Section: devel
 Priority: optional
 Architecture: any

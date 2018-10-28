@@ -1,0 +1,15 @@
+diff --git a/drivers/iommu/intel-iommu.c b/drivers/iommu/intel-iommu.c
+index 869f37d1f3b7..bfc13da9dfb9 100644
+--- a/drivers/iommu/intel-iommu.c
++++ b/drivers/iommu/intel-iommu.c
+@@ -4968,8 +4968,8 @@ static int intel_iommu_attach_device(struct iommu_domain *domain,
+        u8 bus, devfn;
+
+        if (device_is_rmrr_locked(dev)) {
+-               dev_warn(dev, "Device is ineligible for IOMMU domain attach due to platform RMRR requirement.  Contact your platform vendor.\n");
+-               return -EPERM;
++               dev_warn(dev, "Device is ineligible for IOMMU domain attach due to platform RMRR requirement.  Patch is in effect.\n");
++               // return -EPERM;
+        }
+
+        /* normally dev is not mapped */
